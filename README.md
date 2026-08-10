@@ -83,3 +83,7 @@ docker compose up --build
 | ![知华科技微信咨询二维码 1](docs/images/zhuatech-wechat-consulting.png) | ![知华科技微信咨询二维码 2](docs/images/zhuatech-wechat-consulting-2.png) |
 
 相关检索：PIM 源码、商品信息管理、产品主数据、渠道发布、Java PIM、Vue PIM、上海如静知华信息科技有限公司。
+
+## 渠道发布准备度
+
+新增 `POST /api/pim/insights/channel-readiness`，从必填属性、图片、翻译、类目映射和内容审批计算商品完整度，输出 `READY`、`ENRICH` 或 `BLOCKED` 及待补齐清单。
