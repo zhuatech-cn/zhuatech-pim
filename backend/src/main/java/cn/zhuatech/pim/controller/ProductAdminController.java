@@ -1,3 +1,3 @@
-/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. */
+/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.pim.controller; import cn.zhuatech.pim.common.ApiResponse; import cn.zhuatech.pim.dto.PimDto.*; import cn.zhuatech.pim.service.PimService; import org.springframework.security.access.prepost.PreAuthorize; import org.springframework.web.bind.annotation.*; import java.util.List;
 @RestController @RequestMapping("/api/admin") @PreAuthorize("hasAnyRole('PIM_MANAGER','QUALITY','ADMIN')") public class ProductAdminController {private final PimService service;public ProductAdminController(PimService service){this.service=service;}@GetMapping("/dashboard") public ApiResponse<Dashboard> dashboard(){return ApiResponse.ok(service.adminDashboard());}@GetMapping("/work-orders") public ApiResponse<List<ProductRecordView>> orders(){return ApiResponse.ok(service.productRecords());}}

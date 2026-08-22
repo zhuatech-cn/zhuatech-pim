@@ -1,4 +1,4 @@
-/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. */
+/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.pim.service;
 import cn.zhuatech.pim.common.BusinessException; import cn.zhuatech.pim.dto.PimDto.*; import cn.zhuatech.pim.model.*; import cn.zhuatech.pim.repository.*; import org.springframework.stereotype.Service; import org.springframework.transaction.annotation.Transactional; import java.util.*;
 @Service @Transactional(readOnly=true) public class PimService {
